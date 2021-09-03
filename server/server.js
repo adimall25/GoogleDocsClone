@@ -36,10 +36,11 @@ io.on("connection", socket => {
       socket.on("save-document", async data => {
         await Document.findByIdAndUpdate({_id: documentId}, { data })
       })
+    //   as
     })
   })
 
-  
+
   
   async function findOrCreateDocument(id) {
     if (id == null) return
