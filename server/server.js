@@ -37,6 +37,8 @@ io.on("connection", socket => {
         await Document.findByIdAndUpdate({_id: documentId}, { data })
       })
     //   as
+    // asdas
+
     })
   })
 
